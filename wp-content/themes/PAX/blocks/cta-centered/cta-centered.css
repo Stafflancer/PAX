@@ -1,0 +1,78 @@
+.cta-centered {
+    padding: 275px 0 250px;
+}
+.page-documents .cta-centered {
+    padding: 40px 0 95px;
+}
+.cta-centered .section-header {
+    margin: 0 0 20px;
+}
+.cta-centered .section-header,
+.cta-centered .wp-block-buttons {
+    justify-content: center;
+}
+.cta-centered-inner {
+    text-align: center;
+    width: 100%;
+}
+.cta-centered.separator-top-right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 150px;
+    background: #fff;
+    width: 100%;
+    border-bottom-right-radius: 180px;
+}
+.cta-centered.separator-bottom-left:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    background: #F0F8FD;
+    width: 100%;
+    border-top-left-radius: 180px;
+}
+.page-video-tutorials .site-main.site-content ~ .site-footer {
+    padding-top: 0px;
+}
+
+.cta-centered.media-center-section {
+    padding: 124px 0 128px;
+    max-width: 1320px;
+    margin: 100px auto 108px;
+    border-radius: 10px;
+}
+.cta-centered.media-center-section .container {
+    max-width: 1120px;
+}
+.cta-centered-inner .section-header h2 {
+    text-transform: inherit;
+}
+@media screen and (max-width: 991px) {
+    .cta-centered.media-center-section {
+        padding: 100px 0;
+        max-width: calc(100% - 70px);
+        margin: 0 auto 50px;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .cta-centered {
+        padding: 100px 0;
+    }
+    .cta-centered.separator-top-right:before,
+    .cta-centered.separator-bottom-left:after{
+        height: 60px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .latest-reads-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 575px) {
+    .latest-reads-inner {
+        grid-template-columns: 1fr;
+    }
+}

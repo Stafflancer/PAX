@@ -1,0 +1,9 @@
+jQuery(document).ready(function($)
+{
+    $('.play-video').click(function(){
+       $('.video-modal-popup').fadeIn(500);
+    });
+    $('.close-btn').click(function(){
+        $('.video-modal-popup').fadeOut(500);
+    });
+});

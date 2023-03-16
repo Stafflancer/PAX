@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "acf/slider-logos",
+	"title": "Slider - Logos",
+	"description": "A custom home page slider logos block.",
+	"category": "acf",
+	"usesContext": [ "allowResize", "imageCrop", "fixedHeight" ],
+	"icon": "slides",
+	"keywords": [ "slider", "logos"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "slider-logos.php"
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"alignContent": {
+			"type": "string",
+			"default": "center left"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": false,
+			"link": false,
+			"text": true
+		},
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"alignContent": "matrix",
+		"alignText": true,
+		"fullHeight": true,
+		"html": true,
+		"jsx": true,
+		"multiple": true,
+		"reusable": true
+	},
+	"style": [ "swiper-style", "file:./slider-logos.css"],
+	"script":[ "swiper-script", "slider-logos-script"]
+
+}

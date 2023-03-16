@@ -1,0 +1,67 @@
+.card-with-colored-content-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+}
+.card-with-colored-content-outer .card-caption-colored-item {
+    max-width: 100%;
+    overflow: hidden;
+    background: #f0f8fd;
+    border-radius: 10px;
+}
+.card-with-colored-content-outer .card-caption-colored-item .colored-content-image {
+    height: 268px;
+    width: 100%;
+}
+.card-with-colored-content-outer .card-caption-colored-item .colored-content-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-with-colored-content-outer .card-caption-colored-item .colored-content-text {
+    padding: 40px 90px 62px;
+}
+.card-with-colored-content-outer .card-caption-colored-item .colored-content-text h3 {
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0 0 10px;
+}
+.card-with-colored-content-outer .card-caption-colored-item .colored-content-text .colored-content p{
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+.card-with-colored-content-outer .card-caption-colored-item .colored-content-text .colored-content p:last-child{
+    margin-bottom: 0px;
+}
+
+
+@media screen and (max-width: 1199px) {
+    .card-with-colored-content-outer .card-caption-colored-item .colored-content-text{
+        padding: 40px;
+    }
+    .card-with-colored-content-outer .card-caption-colored-item .colored-content-text h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .card-with-colored-content-outer .card-caption-colored-item .colored-content-text .colored-content p {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        margin: 0 0 15px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .card-with-colored-content-outer .card-caption-colored-item .colored-content-image {
+        height: 218px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .card-with-colored-content-outer {
+        grid-template-columns: 1fr;
+    }
+}

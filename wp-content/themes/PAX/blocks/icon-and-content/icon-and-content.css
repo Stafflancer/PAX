@@ -1,0 +1,186 @@
+.icon-and-content {
+    padding: 132px 0 139px;
+}
+.icon-content-info {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.icon-content-info .icon-content-info-inner,
+.icon-content-info .content-heading-description{
+    display: flex;
+}
+.icon-content-info .icon-content-info-inner .icon,
+.icon-content-info .content-heading-description .content_icon{
+    width: 90px;
+}
+.icon-content-info .icon-content-info-inner .section-header,
+.icon-content-info .content-heading-description .content-icon-right{
+    width: calc(100% - 90px);
+    padding: 20px 0 0 23px;
+    text-align: left;
+    margin: 0;
+}
+/*.icon-content-info .content-heading-description .content-icon-right{
+    text-align: center;
+}*/
+.icon-content-info .content-heading-description .content_icon ~ .content-icon-right{
+    text-align: left;
+    padding: 20px 0 0 23px;
+}
+.icon-content-info .content-heading-description .content-icon-right{
+    text-align: center;
+    padding-left: 0;
+}
+.icon-content-info .icon-content-info-inner .section-header h2,
+.icon-content-info .content-heading-description .content-icon-right h2{
+    margin: 0 0 10px;
+    line-height: 46px;
+    font-size: 40px;
+}
+.icon-content-info .icon-content-info-inner .section-header .header-section-outer,
+.icon-content-info .content-heading-description .content-icon-right .description{
+    max-width: 872px;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+
+.content-heading-outer {
+    width: 100%;
+    display: flex;
+    margin: 14px 0 0;
+    padding-left: 113px;
+    justify-content: space-between;
+}
+.content-heading-outer > div {
+    max-width: 455px;
+    width: 100%;
+}
+.content-heading-outer .content-left{
+    padding-right: 30px;
+ }
+
+ .content-heading-outer .content-item h3 {
+    font-size: 25px;
+    line-height: 35px;
+    text-transform: initial;
+    margin: 0 0 5px;
+}
+.content-heading-outer .content-item .content-description {
+    margin: 0 0 25px;
+}
+.content-heading-outer .content-item .content-description p {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+.content-heading-outer .content-item .content-description ul {
+    padding: 0 0 0 21px;
+}
+.content-heading-outer .content-item .content-description ul li {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin: 0 0 16px;
+    list-style: disc;
+}
+.content-heading-outer .content-item .content-description ul li:last-child{
+    margin-bottom: 0px;
+}
+.content-heading-outer .content-item .content-description ul li::marker {
+    color: #2a7de1;
+}
+.content-heading-outer > div .content-list h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 15px 0;
+    padding: 0 0 0 43px;
+    text-transform: inherit;
+    position: relative;
+}
+
+.content-heading-outer > div .content-list h4:before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    left: 0;
+    position: absolute;
+    top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+.content-heading-outer > div .content-list.list-style-negative h4:before {
+    background-image: url("data:image/svg+xml,%3Csvg id='Icon-CompareOrangeNegative' xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath id='Path_58966' data-name='Path 58966' d='M15 0A15 15 0 1 1 0 15 15 15 0 0 1 15 0Z' fill='%23f0704a'/%3E%3Cpath id='Path_58965' data-name='Path 58965' d='M13514.125-9000.709l6.694-8.171' transform='translate(-13502.473 9019.795)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='3'/%3E%3Cpath id='Path_58967' data-name='Path 58967' d='M13520.82-9000.709l-6.694-8.171' transform='translate(-13502.473 9019.795)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='3'/%3E%3C/svg%3E");
+}
+.content-heading-outer > div .content-list.list-style-positive h4:before{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cg id='Icon-CompareGreenCheckmark' transform='translate(-1040 -1549)'%3E%3Ccircle id='Ellipse_761' data-name='Ellipse 761' cx='15' cy='15' r='15' transform='translate(1040 1549)' fill='%2321ba8c'/%3E%3Cpath id='Path_58965' data-name='Path 58965' d='M13510.166-9004.022l3.959 3.313 6.694-8.171' transform='translate(-12460.455 10568.38)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+@media screen and (max-width: 1199px){
+    .icon-and-content {
+        padding: 100px 0px;
+    }
+    .icon-content-info .icon-content-info-inner .section-header h2, .icon-content-info .content-heading-description .content-icon-right h2 {
+       line-height: 38px;
+        font-size: 28px;
+    }
+    .icon-content-info .icon-content-info-inner .section-header .header-section-outer, .icon-content-info .content-heading-description .content-icon-right .description,
+    .content-heading-outer .content-item .content-description p{
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 15px;
+    }
+    .content-heading-outer .content-item h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 767px){
+    .icon-content-info .icon-content-info-inner .icon, .icon-content-info .content-heading-description .content_icon {
+        width: 60px;
+    }
+    .content-heading-outer .content-left {
+        padding-right: 0;
+    }
+    .content-heading-outer > div {
+        max-width: 100%;
+        width: 100%;
+    }
+    .content-heading-outer{
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+    .content-heading-outer > div .content-list h4:before {
+        height: 22px;
+        width: 22px;
+    }
+    .content-heading-outer > div .content-list h4 {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 10px 0;
+        padding: 0 0 0 30px;
+    }
+    .content-heading-outer .content-right {
+        margin: 30px 0 0;
+    }
+    .icon-content-info .icon-content-info-inner .section-header, .icon-content-info .content-heading-description .content-icon-right {
+        width: 100%;
+        padding: 20px 0 0;
+    }
+    .icon-content-info .icon-content-info-inner, .icon-content-info .content-heading-description {
+        flex-wrap: wrap;
+    }
+    .content-heading-outer .content-item .content-description ul li {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 7px;
+    }
+}

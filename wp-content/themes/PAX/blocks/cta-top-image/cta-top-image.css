@@ -1,0 +1,19 @@
+.cta-top-image{
+	padding: 100px 0 124px;
+}
+.cta-top-image .container {
+    max-width: 896px;
+}
+.cta-top-image .cta-top-image-main .cta-top-image-inner {
+    text-align: center;
+    margin: 0 0 10px;
+}
+.cta-top-image .cta-top-image-main .cta-top-image-inner img {
+    max-height: 280px;
+}
+.cta-top-image .section-header {
+    margin-bottom: 5px;
+}
+.cta-top-image .bottom-content .wp-block-buttons {
+    justify-content: center;
+}

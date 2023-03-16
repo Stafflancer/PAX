@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "acf/latest-reads",
+	"title": "Latest Reads",
+	"description": "A custom latest reads block.",
+	"category": "acf",
+	"usesContext": [ "allowResize", "imageCrop", "fixedHeight" ],
+	"icon": "admin-post",
+	"keywords": [ "latest", "reads"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "latest-reads.php"
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"alignContent": {
+			"type": "string",
+			"default": "center left"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": false,
+			"link": false,
+			"text": true
+		},
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"alignContent": "matrix",
+		"alignText": true,
+		"fullHeight": true,
+		"html": true,
+		"jsx": true,
+		"multiple": true,
+		"reusable": true
+	},
+	"style": ["swiper-style", "file:./latest-reads.css"],
+	"script": ["swiper-script", "latest-reads-script"]
+}

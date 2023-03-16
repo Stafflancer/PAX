@@ -1,0 +1,46 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "acf/side-by-side-testimonials",
+    "title": "Side by Side (Testimonials)",
+    "description": "A custom Side by Side (Testimonials) block.",
+    "category": "acf",
+    "usesContext": [ "allowResize", "imageCrop", "fixedHeight" ],
+    "icon": "testimonial",
+    "keywords": [ "side", "by", "side", "testimonials" ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "side-by-side-testimonials.php"
+    },
+    "attributes": {
+        "align": {
+            "type": "string",
+            "default": "full"
+        },
+        "alignContent": {
+            "type": "string",
+            "default": "center left"
+        }
+    },
+    "supports": {
+        "color": {
+            "background": false,
+            "link": false,
+            "text": true
+        },
+        "align": [
+            "wide",
+            "full"
+        ],
+        "anchor": true,
+        "alignContent": "matrix",
+        "alignText": true,
+        "fullHeight": true,
+        "html": true,
+        "jsx": true,
+        "multiple": true,
+        "reusable": true
+    },
+    "style": ["swiper-style", "file:./side-by-side-testimonials.css"],
+    "script": [ "swiper-script", "side-by-side-testimonials-script"]
+}

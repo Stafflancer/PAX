@@ -1,0 +1,17 @@
+.separator {
+    height: 1px;
+}
+
+
+.separator .inner-container .separator{
+    border-bottom: solid 1px #fff;
+}
+.separator .inner-container .separator.separator-style-dots{
+    border-bottom: dotted 1px #fff;
+}
+.separator .inner-container .separator.separator-dark{
+    border-bottom: solid 1px #A7B0B5;
+}
+.separator .inner-container .separator.separator-style-dots.separator-dark{
+    border-bottom: dotted 1px #A7B0B5;
+}

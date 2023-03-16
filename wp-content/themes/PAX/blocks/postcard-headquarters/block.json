@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "acf/postcard-headquarters",
+	"title": "Postcard - Headquarters",
+	"description": "A custom Postcard - Headquarters block.",
+	"category": "acf",
+	"usesContext": [ "allowResize", "imageCrop", "fixedHeight" ],
+	"icon": "index-card",
+	"keywords": [ "postcard", "headquarters" ],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "postcard-headquarters.php"
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"alignContent": {
+			"type": "string",
+			"default": "center left"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": false,
+			"link": false,
+			"text": true
+		},
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"alignContent": "matrix",
+		"alignText": true,
+		"fullHeight": true,
+		"html": true,
+		"jsx": true,
+		"multiple": true,
+		"reusable": true
+	},
+	"style": "file:./postcard-headquarters.css"
+}

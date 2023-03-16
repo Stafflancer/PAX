@@ -1,0 +1,211 @@
+.side-by-side-video {
+    width: 100%;
+}
+
+.side-by-side-video-outer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side-by-side-video-outer .video {
+    width: 49%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 352px;
+}
+.side-by-side-video-outer .video iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.side-by-side-video-outer .content-info {
+    width: 51%;
+    text-align: left;
+    align-self: center;
+    padding: 15px;
+    padding-right: 0px;
+}
+.side-by-side-video-outer .content-info .content-info-inner {
+    max-width: 536px;
+    margin-left: auto;
+}
+.side-by-side-video-outer .content-info .content-info-inner .section-header {
+    text-align: left;
+    margin: 0;
+}
+.side-by-side-video-outer .content-info .content-info-inner .section-header h2 {
+    font-size: 34px;
+    line-height: 44px;
+    text-transform: initial;
+}
+.side-by-side-video-outer .content-info .content-info-inner .section-header .content_section {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 0 30px;
+}
+.content-first .side-by-side-video-outer .content-info {
+    order: 1;
+    padding-right: 15px;
+    padding-left: 0px;
+}
+.content-first  .side-by-side-video-outer .content-info .content-info-inner {
+    margin-left: initial;
+}
+.content-first .side-by-side-video-outer .video {
+    order: 2;
+}
+
+
+.content_section form{
+    position: relative;
+}
+.content_section form .gform_footer.top_label {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+.content_section form .gform_body.gform-body .gform_fields {
+    grid-row-gap: 26px;
+    display: grid;
+}
+
+.content_section form .gform_body.gform-body label.gfield_label {
+    display: none;
+}
+.content_section form .gform_body.gform-body input:not([type="checkbox"]) {
+    border: none;
+    border-bottom: solid 2px #07055B;
+    padding: 10px 0px;
+    outline: none;
+    color: #07055B;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    line-height: 26px;
+}
+.content_section form .gform_body.gform-body .gform_fields  .gfield:first-child {
+    width: calc(100% - 142px);
+    padding-right: 10px;
+}
+.content_section form .gform_body.gform-body input::placeholder{
+    color: #07055B;
+}
+.content_section .gform_wrapper .gfield_error [aria-invalid=true] {
+    border: none;
+    border-bottom: solid 2px #c02b0a !important;
+}
+.content_section form .validation_message, 
+.content_section .gform_wrapper .gform_validation_errors {
+    display: none;
+}
+.content_section form .gform_footer.top_label {
+    padding: 0;
+    margin: 0;
+}
+.content_section form .gform_footer.top_label input {
+    padding: 14px 24px 13px 23px;
+    margin: 0 !important;
+    border-radius: 40px;
+    border: none !important;
+    cursor: pointer;
+    line-height: 26px;
+    font-size: 16px !important;
+    font-weight: 700;
+    background: #11A1F2 !important;
+    height: auto;
+    line-height: normal;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.35s ease-in-out;
+}
+
+.content_section form .gform_body.gform-body  .gfield_checkbox .gchoice input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+.content_section form .gform_body.gform-body  .gfield_checkbox .gchoice label {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 22px;
+    color: #A7B0B5;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    max-width: 100%;
+}
+.content_section form .gform_body.gform-body  .gfield_checkbox .gchoice label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #A7B0B5;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+.content_section .gform_wrapper .gfield_error label:before{
+    border: 2px solid #c02b0a !important;   
+}
+.content_section form .gform_body.gform-body  .gfield_checkbox .gchoice input:checked + label:before {
+    border: 2px solid #07055B;
+}
+.content_section form .gform_body.gform-body  .gfield_checkbox .gchoice input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 4px;
+    height: 10px;
+    border: solid #07055B;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.gform_wrapper .gfield_error label{
+    color: #c02b0a !important; 
+}
+.content_section form .gform_body.gform-body .gfield_checkbox .gchoice label a{
+    font-weight: 400;
+}
+.gform_confirmation_message {
+    font-size: 22px;
+    text-align: center;
+    max-width: 360px;
+    margin: 20px auto 0;
+    color: #21ba8c;
+}
+@media screen and (max-width: 1199px) {
+    .side-by-side-video-outer .content-info .content-info-inner .section-header h2 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .side-by-side-video-outer > div {
+        width: 100% !important;
+    }
+    .content-first .side-by-side-video-outer .video,
+    .content-first .side-by-side-video-outer .image {
+        order: 1;
+    }
+    .side-by-side-video-outer .content-info .content-info-inner {
+        margin-left: 0;
+    }
+    .side-by-side-video-outer .video {
+        height: 268px;
+    }
+    .side-by-side-video-outer .content-info {
+        padding: 20px 0px 0;
+    }
+}

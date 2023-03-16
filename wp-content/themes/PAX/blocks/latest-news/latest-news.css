@@ -1,0 +1,80 @@
+.latest-news{
+	padding: 130px 0 112px;
+}
+.latest-news .section-header {
+    justify-content: center;
+}
+.latest-reads-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 27px;
+}
+.latest-reads-inner .latest-read-post {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 29px 34px 27px 36px;
+    position: relative;
+    width: 100%;
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 15%);
+    transition: all 0.35s ease-in-out;
+}
+.latest-reads-inner .latest-read-post .latest-reads-item {
+    height: 100%;
+}
+.latest-reads-inner .latest-read-post .latest-reads-item .case-study-block-bottom{	
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.latest-reads-inner .latest-read-post .latest-reads-item .case-study-block-bottom label {
+    margin: 0 0 10px;
+    display: block;
+    font-size: 16px;
+    color: #A7B0B5;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.latest-reads-inner .latest-read-post .latest-reads-item .case-study-block-bottom h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 30px;
+    margin: 0 0 10px;
+}
+.latest-reads-inner .latest-read-post .latest-reads-item .case-study-block-bottom .bottom-date-btn {
+    align-self: flex-end;
+    margin: 80px 0 0;
+}
+.latest-reads-inner .latest-read-post .latest-reads-item .case-study-block-bottom .bottom-date-btn .latest-reads-link {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2A7DE1;
+    line-height: 26px;
+}
+.latest-reads-inner .latest-read-post .latest-reads-item .case-study-block-bottom .bottom-date-btn .latest-reads-link svg {
+    margin: 0 0 0 8px;
+}
+.latest-reads-container .wp-block-buttons {
+    justify-content: center;
+    margin: 50px 0 0;
+}
+@media screen and (max-width: 991px) {
+    .latest-news {
+        padding: 100px 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .latest-reads-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 575px) {
+    .latest-reads-inner {
+        grid-template-columns: 1fr;
+    }
+}

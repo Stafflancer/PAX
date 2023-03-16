@@ -1,0 +1,56 @@
+.promo-postcard .container {
+    max-width: 1120px;
+}
+.promo-postcard .container .promo-postcard-outer {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.promo-postcard .container .promo-postcard-outer > div {
+    width: 50%;
+}
+.promo-postcard .container .promo-postcard-outer .promo-postcard-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.promo-postcard .container .promo-postcard-outer .promo-postcard-content {
+    padding: 44px 44px 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.promo-postcard .container .promo-postcard-outer .promo-postcard-content label {
+    margin: 0 0 10px;
+    display: block;
+    font-size: 16px;
+    color: #A7B0B5;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.promo-postcard .container .promo-postcard-outer .promo-postcard-content h5  {
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 30px;
+    margin: 0 0 10px;
+}
+
+.promo-postcard .container .promo-postcard-outer .promo-postcard-content .promo-postcard-button {
+    margin: 40px 0 0;
+}
+
+@media screen and (max-width: 767px) {
+   .promo-postcard .container .promo-postcard-outer .promo-postcard-content {
+       order: 2;
+       padding: 25px;
+   }
+   .promo-postcard .container .promo-postcard-outer > div {
+       width: 100%;
+   }
+}

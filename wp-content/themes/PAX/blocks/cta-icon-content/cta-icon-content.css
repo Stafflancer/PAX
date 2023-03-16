@@ -1,0 +1,40 @@
+.cta-icon-content {
+    padding: 115px 0px 63px;
+}
+.cta-icon-content .section-header {
+    margin: 0;
+    text-align: left;
+    max-width: 1105px;
+}
+.cta-icon-content .section-header .header-section-outer {
+    order: 2;
+    width: calc(100% - 125px);
+    padding: 40px 0 0 108px;
+}
+
+.cta-icon-content .section-header .add-indicato {
+    order: 1;
+    width: 125px;
+    background-repeat: no-repeat;
+    height: 147px;
+    margin: 0;
+    background-size: 83%;
+}
+.cta-icon-outer > .wp-block-buttons {
+    padding-left: 236px;
+}
+@media screen and (max-width: 767px){
+    .cta-icon-content{
+        padding-bottom: 0px;
+    }
+    .cta-icon-content .section-header .header-section-outer {
+        width: 100%;
+        padding: 0;
+    }
+    .cta-icon-outer > .wp-block-buttons{
+        padding-left: 0px;
+    }
+    .cta-icon-content .section-header .add-indicato{
+        display: none;
+    }
+}

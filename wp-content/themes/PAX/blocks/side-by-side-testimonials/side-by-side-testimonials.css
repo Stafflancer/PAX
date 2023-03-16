@@ -1,0 +1,107 @@
+.side-by-side-testimonials{
+    width: 100%;
+    padding: 255px 0 251px;
+}
+.icon-content-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon-content-info .content-left{
+    width: 100%;
+    max-width: 648px;
+}
+.icon-content-info .content-right{
+    width: 100%;
+    max-width: 590px;
+    padding-left: 30px;
+}
+.icon-content-info .section-header h2 {
+    text-transform: initial;
+}
+.icon-content-info .section-header {
+    margin: 0;
+    text-align: left;
+}
+.icon-content-info .section-header .add-indicato {
+    order: 1;
+    width: 112px;
+    background-repeat: no-repeat;
+    height: 42px;
+    margin: 10px 0 0;
+    background-size: 83%;
+}
+.icon-content-info .section-header .header-section-outer {
+    order: 2;
+    width: 100%;
+}
+
+.icon-content-info .content-right h2 {
+    font-size: 34px;
+    line-height: 44px;
+    color: #72D6F1;
+    border-left: solid 5px #72D6F1;
+    padding-left: 20px;
+    margin: 0 0 50px;
+}
+
+.icon-content-info .content-right  .testimonials-item blockquote {
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0 0 0 30px;
+    font-weight: 700;
+    color: #72D6F1;
+}
+.icon-content-info .content-right .swiper-pagination.swiper-pagination-bullets {
+    bottom: 0px;
+    position: inherit;
+    margin: 21px 0 0px 30px;
+    text-align: left;
+}
+.icon-content-info .content-right span.swiper-pagination-bullet {
+    opacity: 1;
+    background: transparent;
+    height: 15px;
+    width: 15px;
+    border: solid 1px #72D6F1;
+    margin: 0 21px 0 0;
+}
+.icon-content-info .content-right span.swiper-pagination-bullet:last-child{
+    margin-right: 0px;
+}
+.icon-content-info .content-right span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #72D6F1;
+}
+
+.rating-star {
+    margin: 0 0 24px 28px;
+}
+
+@media screen and (max-width: 1199px){
+    .side-by-side-testimonials {
+        padding: 100px 0px;
+    }
+    .icon-content-info > div {
+        max-width: 50% !important;
+    }
+    .icon-content-info .content-right h2 {
+        font-size: 24px;
+        line-height: 34px;
+        margin: 0 0 30px;
+    }
+    .icon-content-info .content-right  .testimonials-item blockquote {
+        font-size: 20px;
+        line-height: 30px
+    }
+}
+@media screen and (max-width: 767px){
+    .icon-content-info{
+        flex-wrap: wrap;
+    }
+    .icon-content-info > div{
+        max-width: 100% !important;
+    }
+    .icon-content-info .content-right {
+        padding: 60px 0 0;
+    }
+}

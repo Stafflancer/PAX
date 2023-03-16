@@ -1,0 +1,58 @@
+.cta-promo-bar {
+    padding: 30px;
+}
+.single.single-post .post-content .entry-content.wp-block-group .cta-promo-bar {
+    max-width: 1096px;
+    margin: 0 auto 40px;
+    border-radius: 10px;
+}
+.cta-promo-bar-inner {
+    display: flex;
+    width: 100%;
+    justify-items: center;
+}
+.cta-promo-bar-inner h3 {
+    text-transform: inherit;
+    font-size: 24px;
+    line-height: 33px;
+}
+.cta-promo-bar-inner h3 {
+    text-transform: inherit;
+    font-size: 24px;
+    line-height: 33px;
+    width: calc(100% - 180px);
+    padding-right: 30px;
+}
+.cta-promo-bar-inner .promo-postcard-button {
+    width: 180px;
+}
+.cta-promo-bar-inner .promo-postcard-button a {
+    width: 100%;
+    display: block;
+    padding: 9px 20px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .cta-promo-bar-inner {
+        flex-wrap: wrap;
+    }
+    .cta-promo-bar-inner h3 {
+        width: 100%;
+        text-align: center;
+    }
+    .cta-promo-bar-inner .promo-postcard-button {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .related-post-inner-main {
+        grid-template-columns: 1fr;
+    }
+
+}

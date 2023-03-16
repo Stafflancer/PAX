@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "acf/slider-cards-with-tooltip-image",
+	"title": "Slider - Cards with Tooltip Image",
+	"description": "A custom home page Slider - Cards with Tooltip Image block.",
+	"category": "acf",
+	"usesContext": [ "allowResize", "imageCrop", "fixedHeight" ],
+	"icon": "admin-tools",
+	"keywords": [ "slider", "cards", "tooltip", "image"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "slider-cards-with-tooltip-image.php"
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"alignContent": {
+			"type": "string",
+			"default": "center left"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": false,
+			"link": false,
+			"text": true
+		},
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"alignContent": "matrix",
+		"alignText": true,
+		"fullHeight": true,
+		"html": true,
+		"jsx": true,
+		"multiple": true,
+		"reusable": true
+	},
+	"style": ["swiper-style", "file:./slider-cards-with-tooltip-image.css"],
+	"script": [ "swiper-script", "slider-cards-with-tooltip-image-script"]
+}

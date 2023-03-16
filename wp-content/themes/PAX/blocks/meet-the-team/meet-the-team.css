@@ -1,0 +1,69 @@
+.meet-the-team{
+    padding: 85px 0px 180px;
+}
+.meet-the-team .section-header {
+    justify-content: center;
+}
+
+.meet-the-team .meet-the-team-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    row-gap: 40px;
+}
+.meet-the-team .meet-the-team-inner .meet-the-team-item {
+    width: 25%;
+    padding: 25px 13px;
+}
+.meet-the-team .meet-the-team-inner .meet-the-team-item .thumbnail_ava {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+}
+.meet-the-team .meet-the-team-inner .meet-the-team-item .thumbnail_ava .post-thumbnail,
+.meet-the-team .meet-the-team-inner .meet-the-team-item .thumbnail_ava .post-thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.meet-the-team .meet-the-team-inner .meet-the-team-item .case-study-block-bottom {
+    width: 100%;
+    text-align: center;
+}
+.meet-the-team .meet-the-team-inner .meet-the-team-item .case-study-block-bottom h2.news_heading {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 5px;
+}
+.meet-the-team .meet-the-team-inner .meet-the-team-item .case-study-block-bottom label {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+@media screen and (max-width: 991px) {
+    .meet-the-team .meet-the-team-inner .meet-the-team-item {
+        width: 33.33%;
+    }
+    .meet-the-team {
+        padding: 85px 0px 120px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .meet-the-team .meet-the-team-inner .meet-the-team-item {
+        width: 50%;
+    }
+    .meet-the-team {
+        padding: 85px 0px 80px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .meet-the-team .meet-the-team-inner .meet-the-team-item {
+        width: 100%;
+        padding: 0;
+    }
+}

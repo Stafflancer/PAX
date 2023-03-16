@@ -1,0 +1,61 @@
+.card-with-image-overlay {
+    padding: 75px 0 50px;
+}
+.card-with-image-overlay .container-fluid {
+    padding: 0;
+}
+.card-with-image-overlay .container-fluid .card-with-image-overlay-main{
+    padding:124px 15px 128px;
+    max-width: 100%;
+}
+.card-with-image-overlay .container-fluid .card-with-image-overlay-main .card-with-image-overlay-outer {
+    max-width: 1240px;
+    margin: auto;
+}
+.card-with-image-overlay-main {
+    padding: 124px 0 128px;
+    max-width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: url(../../assets/images/A920.png) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.card-with-image-overlay-main:before{
+    background: #07055B;
+    opacity: 0.8;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0px;
+}
+.card-with-image-overlay .section-header, .card-with-image-overlay-main .wp-block-buttons {
+    justify-content: center;
+}
+.card-with-image-overlay-outer {
+    position: relative;
+    color: #fff;
+}
+.card-with-image-overlay-outer h3,
+.card-with-image-overlay-outer p{
+    color: #fff;
+}
+.card-with-image-overlay-outer p {
+    margin: 0px 0 26px;
+}
+
+.card-with-image-overlay .image-overlay-card .overlay-card-content a {
+    color: #fff;
+    text-decoration: underline;
+}
+@media screen and (max-width: 1199px) {
+    .card-with-image-overlay-main {
+        padding: 80px 20px;
+    }
+}

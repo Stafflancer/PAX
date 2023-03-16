@@ -1,0 +1,152 @@
+.slider-cards-with-icons {
+    width: 100%;
+    padding: 30px 0 0px;
+}
+.slider-cards-with-icons > figure.has-pattern-show {
+    display: flex;
+    align-items: center;
+}
+.slider-cards-with-icons > figure.has-pattern-show img {
+    margin: 0 0 0 -94px;
+}
+.slider-cards-with-icons .section-header {
+    max-width: 760px;
+    margin: 0 auto 0;
+}
+/*.slider-cards-with-icons .section-header h2, 
+.slider-cards-with-icons .section-header h3 {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0 0 10px;
+}*/
+
+.slider-cards-with-icons .section-header .add-indicato{
+    height: 88px;
+    width: 33px;
+    background-repeat: no-repeat;
+}
+.slider-cards-with-icons .slider-cards-outer {
+    position: relative;
+}
+.slider-cards-with-icons .cards-slider {
+    max-width: 1214px;
+    margin: auto;
+    position: initial !important;
+}
+.slider-cards-with-icons .card {
+    padding: 30px 15px;
+    height: auto;
+}
+.card-inner {
+    width: 100%;
+    padding: 46px 38px 48px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+    position: relative;
+    height: 100%;
+    transition: all 0.35s ease-in-out;
+}
+.slider-cards-with-icons .card .card-inner:hover {
+    transform: scale(1.07);
+}
+.card-inner .card-img {
+    text-align: center;
+    max-width: 100px;
+    margin: 0 auto 15px;
+}
+
+.card-inner .card-body h2.card-title {
+    font-size: 25px;
+    text-align: center;
+    color: #2A7DE1;
+    line-height: 35px;
+    margin: 0 0 10px;
+}
+.card-inner p.card-text {
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.card-inner a.custom-link {
+    text-align: center;
+    display: block;
+    color: #2A7DE1;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    font-family: inherit !important;
+    font-size: 0px !important;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg id='Slider_Arrow_L' data-name='Slider Arrow L' xmlns='http://www.w3.org/2000/svg' width='28.265' height='33.512' viewBox='0 0 28.265 33.512'%3E%3Cpath id='Path_55267' data-name='Path 55267' d='M47.79 44.018 64.548 27.262H49.614L38.706 38.168a8.272 8.272 0 0 0 0 11.7L49.614 60.774H64.548Z' transform='translate(-36.283 -27.262)' fill='%2321ba8c'/%3E%3C/svg%3E");
+    width: 28px;
+    height: 33px;
+    background-repeat: no-repeat;
+}
+.slider-cards-with-icons .swiper-button-prev, .slider-cards-with-icons .swiper-rtl .swiper-button-next {
+    left: 0px;
+    right: auto;
+}
+.slider-cards-with-icons .swiper-button-next, .slider-cards-with-icons .swiper-rtl .swiper-button-prev {
+    right: 0px;
+    left: auto;
+    transform: rotate(180deg);
+}
+.slider-cards-with-icons .wp-block-buttons {
+    justify-content: center;
+    margin: 40px 0 0;
+}
+
+.slider-cards-with-icons .slider-cards-outer .swiper-pagination {
+    position: inherit;
+    opacity: 1;
+    display: none;
+}
+.slider-cards-with-icons .slider-cards-outer .swiper-pagination .swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+    background: transparent;
+    border-radius: 50%;
+    border: solid 2px #E35205;
+    opacity: 0.7;
+    margin: 0;
+    margin-right: 20px;
+}
+.slider-cards-with-icons .slider-cards-outer .swiper-pagination .swiper-pagination-bullet:last-child{
+    margin-right: 0px;
+}
+.slider-cards-with-icons .slider-cards-outer .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #E35205;
+    opacity: 1;
+}
+@media screen and (max-width: 991px) {
+    .slider-cards-with-icons .slider-cards-outer .swiper-pagination {
+        display: block;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev,
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        display: none !important;
+    }
+    .card-inner {
+        padding: 30px 26px 40px;
+    }
+    .card-inner .card-body h2.card-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+
+    .slider-cards-with-icons .slider-cards-outer {
+        position: relative;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+    .slider-cards-with-icons .wp-block-buttons{
+        display: none !important;
+    }
+}

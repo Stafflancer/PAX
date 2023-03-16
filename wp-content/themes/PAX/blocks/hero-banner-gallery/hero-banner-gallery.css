@@ -1,0 +1,168 @@
+.hero-banner-gallery {
+    padding: 128px 0 163px;
+}
+
+.hero-banner-outer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hero-banner-outer .side-image {
+    max-width: 648px;
+    padding: 50px;
+    border-radius: 10px;
+/*    background: #21BA8C;*/
+    width: 100%;
+    margin: 54px 0 0;
+}
+.hero-banner-outer .hero-banner-side {
+    max-width: 667px;
+}
+.gallery-content-item {
+    margin-left: -130px;
+    width: calc(100% + 130px);
+    display: flex;
+}
+.hero-banner-outer .hero-banner-side .add-indicato {
+    width: 130px;
+    background-repeat: no-repeat;
+    height: 42px;
+    margin: 10px 0 0;
+    background-size: 83%;
+}
+.gallery-content-item .gallery-content-item-inner {
+    width: calc(100% - 130px);
+    margin-left: auto;
+    padding-right: 134px;
+}
+.gallery-content-item .gallery-content-item-inner h3 {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 5px 0 10px;
+}
+.gallery-content-item .gallery-content-item-inner .content p {
+    margin: 0 0 18px;
+    line-height: 26px;
+}
+.gallery-content-item .gallery-content-item-inner .content ul {
+    font-size: 18px;
+    font-weight: 700;
+}
+.gallery-content-item .gallery-content-item-inner .content ul li {
+    position: relative;
+    left: 0;
+    padding: 0 0 0 30px;
+    line-height: 26px;
+}
+.gallery-content-item .gallery-content-item-inner .content ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+.gallery-content-item .gallery-content-item-inner .content ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 6px;
+    height: 12px;
+    border: solid #21BA8C;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.hero-banner-outer .side-image .side-image-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.hero-banner-outer .side-image .side-image-inner .wp-block-buttons {
+    justify-content: center;
+}
+.hero-banner-outer .side-image .side-image-inner .gallery.swiper {
+    position: initial;
+    max-width: 78%;
+    margin: 0 auto;
+    width: 100%;
+    height: calc(100% - 50px);
+}
+ 
+.hero-banner-outer .swiper-button-next:after, 
+.hero-banner-outer .swiper-button-prev:after {
+    font-family: inherit !important;
+    font-size: 0px !important;
+    content: "";
+    width: 28px;
+    filter: brightness(0);
+    height: 33px;
+    background-size: 87%;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg id='Slider_Arrow_R' data-name='Slider Arrow R' xmlns='http://www.w3.org/2000/svg' width='28.265' height='33.512' viewBox='0 0 28.265 33.512'%3E%3Cpath id='Path_55266' data-name='Path 55266' d='M53.041 44.018 36.283 27.262H51.216L62.125 38.168a8.272 8.272 0 0 1 0 11.7L51.216 60.774H36.283Z' transform='translate(-36.283 -27.262)' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.is-style-outline .wp-element-button.has-contrast-color:hover, .is-style-outline .wp-block-button__link.has-contrast-color:hover{
+    background-color: #333 !important;
+    color: #fff !important;
+    border-color: #333 !important;
+}
+.hero-banner-outer .swiper-button-prev, 
+.hero-banner-outer .swiper-rtl .swiper-button-next {
+    left: 0px;
+    right: auto;
+    transform: rotate(180deg);
+}
+.hero-banner-outer .swiper-button-next, 
+.hero-banner-outer .swiper-rtl .swiper-button-prev {
+    right: 0px;
+    left: auto;
+}
+.side-image-inner .gallery.swiper .swiper-slide {
+    padding: 0 10px;
+}
+.side-image-inner .gallery.swiper .swiper-slide a {
+    width: 100%;
+    background: #fff;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10px;
+    height: 80%;
+}
+
+.side-image-inner .gallery.swiper .swiper-slide  p {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 25px 0 0;
+}
+@media screen and (max-width: 1199px) {
+    .hero-banner-gallery {
+        padding: 50px 0px 70px;
+    }
+    .hero-banner-outer {
+        flex-wrap: wrap;
+    }
+    .hero-banner-outer > div {
+        width: 100%;
+        max-width: 100% !important;
+    }
+    .gallery-content-item {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+    }
+    .gallery-content-item .gallery-content-item-inner {
+        width: 100%;
+        margin-left: auto;
+        padding-right: 0;
+    }
+    .hero-banner-outer .hero-banner-side .add-indicato{
+        display: none;
+    }
+}

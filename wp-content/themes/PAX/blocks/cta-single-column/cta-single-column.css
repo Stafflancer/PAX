@@ -1,0 +1,26 @@
+.cta-single-column {
+    width: 100%;
+    padding: 205px 0 223px;
+}
+.cta-single-column > .has-background-dim.has-transparent-to-dark-blue-gradient-color,
+.cta-single-column > .has-background-dim.has-dark-blue-to-transparent-gradient-color{
+    opacity: 1;
+}
+.columns-content-single {
+    max-width: 538px;
+    width: 100%;
+}
+.columns-content-single .section-header {
+    text-align: left;
+}
+.columns-content-single.column-position-left {
+    margin-right: auto;
+}
+.columns-content-single.column-position-right {
+    margin-left: auto;
+}
+@media screen and (max-width: 991px) {
+.cta-single-column {
+    padding: 100px 0;
+}
+}

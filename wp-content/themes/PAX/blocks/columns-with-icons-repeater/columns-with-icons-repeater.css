@@ -1,0 +1,53 @@
+.columns-with-colored-content-main .columns-with-colored-content-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 60px;
+}
+.columns-with-colored-content-main .columns-with-colored-content-outer .columns-caption-colored-item .columns-content-icon {
+    max-height: 76px;
+    margin: 0 auto 15px;
+}
+.columns-with-colored-content-main .columns-with-colored-content-outer .columns-caption-colored-item  h3 {
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0 0 10px;
+}
+.columns-with-colored-content-main .columns-with-colored-content-outer .columns-caption-colored-item  h3 {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0 0 10px;
+    text-transform: initial;
+}
+.columns-with-colored-content-main .columns-with-colored-content-outer .columns-caption-colored-item .columns-content p{
+    margin: 0 0 20px;
+}
+.columns-with-colored-content-main .columns-with-colored-content-outer .columns-caption-colored-item .columns-content p:last-child{
+    margin-bottom: 0px;
+}
+.columns-with-colored-content-main .columns-with-colored-content-outer .columns-caption-colored-item {
+    padding: 30px 0;
+}
+
+@media screen and (max-width: 991px) {
+    
+    .columns-with-colored-content-main .columns-with-colored-content-outer {
+        grid-column-gap: 60px;
+    }
+    .columns-with-colored-content-main .columns-with-colored-content-outer .columns-caption-colored-item  h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .columns-with-colored-content-main .columns-with-colored-content-outer {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .columns-with-colored-content-main .columns-with-colored-content-outer {
+        grid-template-columns: 1fr;
+    }
+}

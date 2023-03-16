@@ -1,0 +1,81 @@
+
+.side-by-side-grid .container-fluid {
+    padding: 0;
+}
+.side-by-side-grid-outer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.side-by-side-grid-outer > div {
+    width: 50%;
+}
+.side-by-side-grid-outer .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.side-by-side-grid-outer .side-by-side-grid-content {
+    align-self: center;
+    padding: 65px 15px;
+    padding-left: 124px;
+}
+.content-first .side-by-side-grid-outer {
+    flex-direction: row-reverse;
+}
+.content-first .side-by-side-grid-outer .side-by-side-grid-content {
+    padding-left: 0;
+    padding-right: 50px;
+}
+.side-by-side-grid-outer .side-by-side-grid-content .grid-content-item {
+    max-width: 536px;
+    margin-right: auto;
+}
+.side-by-side-grid-outer .side-by-side-grid-content .grid-content-item h2 {
+    font-size: 40px;
+    line-height: 46px;
+    margin: 0 0 10px;
+}
+.side-by-side-grid-outer .side-by-side-grid-content .grid-content-item  .content p {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+.side-by-side-grid-outer .side-by-side-grid-content .grid-content-item  .content p:last-child{
+    margin-bottom: 0px;
+}
+.side-by-side-grid-outer .side-by-side-grid-content .grid-content-item  .wp-block-buttons {
+    margin: 40px 0 0;
+}
+@media screen and (max-width: 1199px) {
+    .side-by-side-grid-outer .side-by-side-grid-content .grid-content-item h2{
+        line-height: 38px;
+        font-size: 28px;
+    }
+    .side-by-side-grid-outer .side-by-side-grid-content .grid-content-item .content p {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 15px;
+    }
+    .side-by-side-grid-outer .side-by-side-grid-content {
+        padding: 40px 15px;
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .content-first .side-by-side-grid-outer {
+        flex-direction: row;
+    }
+    .side-by-side-grid-outer > div {
+        width: 100%;
+    }
+    .side-by-side-grid-outer .side-by-side-grid-content {
+        padding: 60px 35px;
+        padding-left: 35px;
+    }
+    .side-by-side-grid-outer .image {
+        height: 400px;
+    }
+}

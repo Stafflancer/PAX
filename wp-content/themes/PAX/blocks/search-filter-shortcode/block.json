@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "acf/search-filter-shortcode",
+	"title": "Search & Filter Shortcode",
+	"description": "A custom Search & Filter Shortcode block",
+	"category": "acf",
+	"usesContext": [ "allowResize", "imageCrop", "fixedHeight" ],
+	"icon": "shortcode",
+	"keywords": [ "search", "filter", "shortcode"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "search-filter-shortcode.php"
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"alignContent": {
+			"type": "string",
+			"default": "center left"
+		}
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"alignContent": false,
+		"alignText": true,
+		"fullHeight": true,
+		"html": true,
+		"jsx": true,
+		"multiple": true,
+		"reusable": true
+	},
+	"style": "file:./search-filter-shortcode.css",
+	"script": [ "search-filter-shortcode-script"]
+}

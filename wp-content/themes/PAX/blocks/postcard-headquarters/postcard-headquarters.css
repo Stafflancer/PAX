@@ -1,0 +1,70 @@
+.postcard-headquarters {
+    padding: 94px 0 40px;
+}
+.postcard-headquarters .postcard-headquarters-content > h2 {
+    color: #07055b;
+    margin: 0 0 43px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 46px;
+}
+.postcard-headquarters .postcard-headquarters-content .postcard-headquarters-outer {
+    display: flex;
+    max-width: 872px;
+    margin: auto;
+    overflow: hidden;
+    background: #07055b;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+}
+.postcard-headquarters .postcard-headquarters-content .postcard-headquarters-outer > div {
+    width: 50%;
+}
+.postcard-headquarters .postcard-headquarters-content .postcard-headquarters-outer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.postcard-headquarters .postcard-headquarters-content .postcard-headquarters-outer .headquarters-info {
+    padding: 38px 37px 40px 60px;
+}
+.postcard-headquarters .postcard-headquarters-content .postcard-headquarters-outer  .headquarters-info h3 {
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0 0 10px;
+}
+.postcard-headquarters .postcard-headquarters-content .postcard-headquarters-outer .headquarters-info .headquarters {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 0 8px;
+}
+.postcard-headquarters .postcard-headquarters-content .postcard-headquarters-outer .headquarters-info .contacts  h6 {
+    font-size: 16px;
+    margin: 0;
+    line-height: 26px;
+}
+.postcard-headquarters .postcard-headquarters-content .postcard-headquarters-outer .headquarters-info .contacts  h6 a{
+	color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+    .postcard-headquarters .postcard-headquarters-content > h2 {
+        margin: 0 0 30px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .postcard-headquarters .postcard-headquarters-content .postcard-headquarters-outer{
+            flex-wrap: wrap;
+    }
+    .postcard-headquarters .postcard-headquarters-content .postcard-headquarters-outer > div {
+        width: 100%;
+    }
+    .postcard-headquarters .postcard-headquarters-content .postcard-headquarters-outer .postcard-headquarters-image {
+        height: 240px;
+    }
+    .postcard-headquarters .postcard-headquarters-content .postcard-headquarters-outer .headquarters-info {
+        padding: 30px;
+    }
+}

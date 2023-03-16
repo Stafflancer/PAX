@@ -1,0 +1,46 @@
+.hero-banner-simple{
+	width: 100%;
+	padding: 131px 0 122px;
+}
+.hero-banner-simple .hero-banner-outer {
+    text-align: center;
+}
+.hero-banner-simple .hero-banner-outer h1 {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.hero-banner-simple .hero-banner-outer h1:after, .hero-banner-simple .hero-banner-outer h1:before {
+    content: "";
+    background-repeat: no-repeat !important;
+    width: 110px;
+    height: 42px;
+    display: inline-block;
+    margin: 0 20px;
+}
+.hero-banner-simple .hero-banner-outer h1:after{
+    background: url(../../assets/images/blue-icon-h.svg);
+    transform: rotate(180deg);
+}
+
+.hero-banner-simple .hero-banner-outer h1:before{
+    background: url(../../assets/images/blue-icon-h.svg);
+}
+@media screen and (max-width: 1199px){
+    .hero-banner-simple {
+        width: 100%;
+        padding: 100px 0px;
+    }
+    .hero-banner-simple .hero-banner-outer h1:after, .hero-banner-simple .hero-banner-outer h1:before {
+        width: 70px;
+        height: 28px;
+        margin: 0 15px;
+        background-size: 100% !important;
+    }
+}
+@media screen and (max-width: 1199px){
+    .hero-banner-simple .hero-banner-outer h1:after, .hero-banner-simple .hero-banner-outer h1:before{
+        display: none;
+    }
+}

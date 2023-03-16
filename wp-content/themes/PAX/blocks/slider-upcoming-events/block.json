@@ -1,0 +1,41 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "acf/slider-upcoming-events",
+    "title": "Slider - Upcoming Events",
+    "description": "A custom Slider - Upcoming Events block",
+    "category": "acf",
+    "usesContext": [ "allowResize", "imageCrop", "fixedHeight" ],
+    "icon": "slides",
+    "keywords": [ "slider", "upcoming", "events" ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "slider-upcoming-events.php"
+    },
+    "attributes": {
+        "align": {
+            "type": "string",
+            "default": "full"
+        },
+        "alignContent": {
+            "type": "string",
+            "default": "center left"
+        }
+    },
+    "supports": {
+        "align": [
+            "wide",
+            "full"
+        ],
+        "anchor": true,
+        "alignContent": "matrix",
+        "alignText": true,
+        "fullHeight": true,
+        "html": true,
+        "jsx": true,
+        "multiple": true,
+        "reusable": false
+    },
+    "style": [ "swiper-style", "file:./slider-upcoming-events.css" ],
+    "script": [ "swiper-script", "slider-upcoming-events-script"]
+}

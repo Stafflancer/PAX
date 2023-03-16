@@ -1,0 +1,195 @@
+.cta-side-by-side-form{
+    width: 100%;
+    padding: 104px 0 109px;
+}
+.cta-side-by-side-outer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.cta-side-by-side-outer > div {
+    width: 50%;
+}
+.cta-side-by-side-outer .section-header h2 {
+    text-transform: initial;
+}
+.cta-side-by-side-outer .section-header {
+    margin: 0;
+    text-align: left;
+}
+.cta-side-by-side-outer .section-header .add-indicato {
+    order: 1;
+    width: 112px;
+    background-repeat: no-repeat;
+    height: 42px;
+    margin: 10px 0 0;
+    background-size: 83%;
+}
+.cta-side-by-side-outer .section-header .header-section-outer {
+    order: 2;
+    width: calc(100% - 112px);
+}
+.cta-side-by-side-outer .content .wp-block-buttons {
+    padding-left: 112px;
+}
+.cta-side-by-side-outer .content {
+    max-width: 566px;
+    padding-right: 30px;
+}
+.cta-side-by-side-outer .form  .gform_wrapper {
+    max-width: 648px;
+    margin: 0 0 0 auto;
+    padding: 45px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.15);
+}
+
+.cta-side-by-side-outer .form  .gform_wrapper form .gform_body .gform_fields {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.cta-side-by-side-outer .form  .gform_wrapper form .gform_body .gform_fields .gfield {
+    grid-column: 1/-1;
+}
+.cta-side-by-side-outer .form  .gform_wrapper form .gform_body .gform_fields .gfield.col-50{
+   grid-column: unset;
+}
+
+.cta-side-by-side-outer .form  .gform_wrapper form .gform_body .gform_fields .gfield input, 
+.cta-side-by-side-outer .form  .gform_wrapper form .gform_body .gform_fields .gfield select {
+    border: 1px solid #A7B0B5;
+    border-radius: 5px;
+    height: 40px;
+    outline: 0 !important;
+    box-shadow: none !important;
+    line-height: 20px;
+    padding: 0 15px;
+    color: #A7B0B5;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.cta-side-by-side-outer .form  .gform_wrapper form .gform_body .gform_fields .gfield input:placeholder{
+    color: #A7B0B5;
+}
+.cta-side-by-side-outer .form  .gform_wrapper form .gform_body .gform_fields .gfield select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9.6' height='8' viewBox='0 0 9.6 8'%3E%3Cpath id='Path_55214' data-name='Path 55214' d='M4.8 0 9.6 8H0Z' transform='translate(9.6 8) rotate(180)' fill='%23a7b0b5'/%3E%3C/svg%3E");
+}
+.cta-side-by-side-outer .form .gform_wrapper form .gform_body .gform_fields .ginput_container_checkbox input {
+    width: 20px;
+    height: 22px;
+    margin: 0;
+    border-radius: 3px !important;
+    margin-right: 9px;
+}
+.cta-side-by-side-outer .form .gform_wrapper form .gform_body .gform_fields .ginput_container_checkbox label,
+.cta-side-by-side-outer .form .gform_wrapper form .gform_body .gform_fields .ginput_container_checkbox label a{
+    line-height: 20px;
+    color: #A7B0B5;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.cta-side-by-side-outer .form .gform_wrapper form .gform_body .gform_fields .ginput_container_checkbox label a{
+    text-decoration: underline;
+}
+.cta-side-by-side-outer .form  .gform_wrapper form .gform_footer {
+    margin: 27px 0 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+}
+.cta-side-by-side-outer .form  .gform_wrapper form .gform_footer .gform_button {
+    border: 2px solid #72D6F1;
+    background: #72D6F1;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    height: 45px;
+    justify-content: center;
+    padding: 6px 20px;
+    min-width: 141px;
+    margin-bottom: 0;
+    cursor: pointer;
+    color: #07055B !important;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 40px;
+    transition: all 0.35s ease-in-out;
+}
+.cta-side-by-side-outer .form  .gform_wrapper form .gform_footer .gform_button:hover {
+    background-color: transparent !important;
+    border-color: #07055B !important;
+}
+.cta-side-by-side-outer .gform_wrapper form .gform_body .gform_fields .gfield.gfield_html span{
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: italic;
+    color: #07055B;
+    display: block;
+}
+.cta-side-by-side-outer .gform_wrapper form .gform_body .gform_fields .gfield h5 {
+    text-align: center;
+    text-transform: initial;
+    line-height: 30px;
+    color: #07055B;
+    font-size: 20px;
+    margin: 0;
+}
+.cta-side-by-side-outer .gform_wrapper form .gform_body .gform_fields .gfield textarea {
+    border: 1px solid #A7B0B5;
+    border-radius: 5px;
+    height: 120px;
+    outline: 0 !important;
+    box-shadow: none !important;
+    line-height: 20px;
+    padding: 9px 15px;
+    color: #A7B0B5;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+@media screen and (max-width: 767px) {
+    .cta-side-by-side-form {
+        padding: 74px 0 88px;
+    }
+    .cta-side-by-side-outer > div {
+        width: 100%;
+    }
+    .cta-side-by-side-outer .section-header .header-section-outer {
+        width: 100%;
+    }
+    .cta-side-by-side-outer .section-header .add-indicato {
+        margin: 0px 0 10px;
+    }
+    .cta-side-by-side-outer .form  .gform_wrapper {
+        max-width: 100%;
+        padding: 34px 25px;
+    }
+    .cta-side-by-side-outer .form  .gform_wrapper form .gform_body .gform_fields .gfield.col-50 {
+        grid-column: 1/-1;
+    }
+    .cta-side-by-side-outer .content {
+        max-width: 536px;
+        padding-right: 0;
+        margin: 0 0 10px;
+    }
+    .cta-side-by-side-outer .content .wp-block-buttons{
+        padding-left: 0px;
+        margin: 0 0 40px;
+    }
+}

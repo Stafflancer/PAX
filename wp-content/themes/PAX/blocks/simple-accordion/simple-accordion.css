@@ -1,0 +1,99 @@
+.simple-accordion {
+    padding: 150px 0 143px;
+}
+.simple-accordion .container {
+    max-width: 896px;
+}
+.accordion-main .accordion .accordion-outer:first-child{
+    border-top: solid 1px #A7B0B5;
+}
+.accordion-main .accordion .accordion-outer {
+    border-bottom: solid 1px #A7B0B5;
+    padding: 25px 0px 25px 60px;
+}
+
+.accordion-main .accordion .accordion-outer .accordion-title h3 {
+    position: relative;
+    font-size: 25px;
+    line-height: 35px;
+    text-transform: initial;
+    color: #2A7DE1;
+    cursor: pointer;
+}
+.accordion-heading-color-light .accordion-main .accordion .accordion-outer .accordion-title h3 {
+    color: #fff;
+}
+.accordion-heading-color-dark .accordion-main .accordion .accordion-outer .accordion-title h3 {
+    color: #07055B;
+}
+
+.accordion-main .accordion .accordion-outer .accordion-title h3:before {
+    content: "";
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: solid 3px #2A7DE1;
+    position: absolute;
+    left: -60px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.308' height='8.775' viewBox='0 0 13.308 8.775'%3E%3Cpath id='Path_57273' data-name='Path 57273' d='M1197.354-5723l4.533 4.533 4.533-4.533' transform='translate(-1195.233 5725.121)' fill='none' stroke='%2321ba8c' stroke-linecap='round' stroke-width='3'/%3E%3C/svg%3E");
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.35s ease-in-out;
+}
+.accordion-main .accordion .accordion-outer.active .accordion-title h3:before {
+    transform: rotate(180deg);
+}
+.accordion-main .accordion .accordion-outer .accordion-contant p {
+    margin: 0 0 25px;
+}
+.accordion-main .accordion .accordion-outer .accordion-contant ul {
+    font-size: 18px;
+}
+.accordion-main .accordion .accordion-outer .accordion-contant ul li {
+    position: relative;
+    left: 0;
+    padding: 0 0 0 30px;
+    line-height: 26px;
+}
+.accordion-main .accordion .accordion-outer .accordion-contant ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 6px;
+    height: 12px;
+    border: solid #21BA8C;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.accordion-main .accordion .accordion-outer .accordion-contant ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+    .simple-accordion {
+        padding: 100px 0;
+    }
+    .accordion-main .accordion .accordion-outer .accordion-title h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .accordion-main .accordion .accordion-outer .accordion-title h3:before {
+        height: 30px;
+        width: 30px;
+        border: solid 2px #2A7DE1;
+    }
+    .accordion-main .accordion .accordion-outer .accordion-contant ul {
+        font-size: 16px;
+    }
+    .media-with-side-outer .media-section-image .video{
+        height: 320px;
+    }
+    .accordion-main .accordion .accordion-outer {
+        padding: 15px 0px 15px 50px;
+    }
+    .accordion-main .accordion .accordion-outer .accordion-title h3:before{
+        left: -50px;
+    }
+}

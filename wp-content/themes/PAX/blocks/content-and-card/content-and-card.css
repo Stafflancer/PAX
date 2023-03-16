@@ -1,0 +1,86 @@
+.content-and-card {
+    padding: 90px 0px 64px;
+}
+.content-and-card .contant-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.content-and-card .contant-card > div {
+    width: 50%;
+}
+.content-and-card .contant-card .left-content {
+    padding: 58px;
+}
+.content-and-card .contant-card .left-content p {
+    font-size: 22px;
+    max-width: 424px;
+    line-height: 30px;
+    margin: auto;
+}
+.content-and-card .contant-card .left-content p:not(:last-child){
+    margin-bottom: 15px;
+}
+.content-and-card .contant-card .left-content p a {
+    font-weight: 400;
+}
+
+.content-and-card .contant-card .right-content {
+    padding: 80px 112px 80px 104px;
+    background: #f0f8fd;
+}
+.content-and-card .contant-card .right-content h5 {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 15px;
+}
+.content-and-card .contant-card .right-content ul li:not(:last-child) {
+    margin: 0 0 15px;
+}
+
+.content-and-card .contant-card .right-content ul li a {
+    display: block;
+    color: #2A7DE1;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+}
+.content-and-card .contant-card .right-content ul li a:after{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9.59' height='11.371' viewBox='0 0 9.59 11.371'%3E%3Cpath id='Path_55163' data-name='Path 55163' d='M6.98 32.948.918 27.263H5.985l3.7 3.7a2.806 2.806 0 0 1 0 3.969l-3.7 3.7H.918Z' transform='translate(-0.918 -27.263)' fill='%232a7de1'%3E%3C/path%3E%3C/svg%3E");
+    content: "";
+    display: inline-block;
+    margin-left: 10px;
+    width: 10px;
+    height: 12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1199px) {
+    .content-and-card .contant-card .right-content,
+    .content-and-card .contant-card .left-content{
+        padding: 50px;
+    }
+    .content-and-card .contant-card .right-content ul li:not(:last-child) {
+        margin: 0 0 5px;
+    }
+    .content-and-card .contant-card .left-content p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .content-and-card .contant-card .right-content,
+    .content-and-card .contant-card .left-content{
+        padding: 30px 0px;
+    }
+    .content-and-card .contant-card .left-content p{
+        max-width: 100%;
+    }
+    .content-and-card .contant-card .right-content{
+        padding: 30px;
+    }
+    .content-and-card .contant-card > div{
+        width: 100%;
+    }
+}

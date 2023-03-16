@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "acf/icon-and-content",
+    "title": "Icon + Content",
+    "description": "A custom Icon + Content block.",
+    "category": "acf",
+    "usesContext": [ "allowResize", "imageCrop", "fixedHeight" ],
+    "icon": "align-right",
+    "keywords": [ "icon", "and", "content" ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "icon-and-content.php"
+    },
+    "attributes": {
+        "align": {
+            "type": "string",
+            "default": "full"
+        },
+        "alignContent": {
+            "type": "string",
+            "default": "center left"
+        }
+    },
+    "supports": {
+        "color": {
+            "background": false,
+            "link": false,
+            "text": true
+        },
+        "align": [
+            "wide",
+            "full"
+        ],
+        "anchor": true,
+        "alignContent": "matrix",
+        "alignText": true,
+        "fullHeight": true,
+        "html": true,
+        "jsx": true,
+        "multiple": true,
+        "reusable": true
+    },
+    "style": "file:./icon-and-content.css"
+}

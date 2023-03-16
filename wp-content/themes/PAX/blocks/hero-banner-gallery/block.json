@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "acf/hero-banner-gallery",
+	"title": "Hero Banner - Gallery",
+	"description": "A custom Hero Banner - Gallery block.",
+	"category": "acf",
+	"usesContext": [ "allowResize", "imageCrop", "fixedHeight" ],
+	"icon": "admin-home",
+	"keywords": [ "hero", "banner", "gallery" ],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "hero-banner-gallery.php"
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"alignContent": {
+			"type": "string",
+			"default": "center left"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": false,
+			"link": false,
+			"text": true
+		},
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"alignContent": "matrix",
+		"alignText": true,
+		"fullHeight": true,
+		"html": true,
+		"jsx": true,
+		"multiple": false,
+		"reusable": false
+	},
+	"style": ["swiper-style", "file:./hero-banner-gallery.css"],
+	"script": [ "swiper-script", "hero-banner-gallery-script"]
+}

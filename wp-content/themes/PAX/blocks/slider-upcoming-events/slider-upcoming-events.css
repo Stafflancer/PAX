@@ -1,0 +1,186 @@
+.slider-upcoming-events{
+	padding: 75px 0 90px;
+}
+.slider-upcoming-events .container {
+    max-width: 1462px;
+}
+.slider-upcoming-events .section-header {
+    max-width: 1096px;
+    margin: 0 auto 40px;
+}
+
+.slider-upcoming-events .upcoming-events-outer {
+    position: relative;
+}
+.slider-upcoming-events .upcoming-events-outer .upcoming-events {
+    max-width: 1320px;
+    margin: auto;
+    position: initial !important;
+}
+.slider-upcoming-events .upcoming-events-outer .upcoming-events-item {
+    padding: 17px 15px;
+    height: auto;
+}
+.upcoming-events-item-inner {
+    width: 100%;
+    padding: 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+    position: relative;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+.upcoming-events-item-inner .upcoming-event-image {
+    max-width: 530px;
+    background: #f0f8fd;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upcoming-events-item-inner .upcoming-event-image img {
+    object-fit: contain;
+}
+
+.upcoming-events-item-inner .upcoming-events-content {
+    padding: 56px 44px 31px 66px;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 530px);
+    width: 100%;
+    justify-content: space-between;
+}
+.upcoming-events-item-inner .upcoming-events-content {
+    padding: 56px 44px 31px 66px;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 530px);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.upcoming-events-item-inner .upcoming-events-content .upcoming-events-text .event-type-tag {
+    margin: 0 0 15px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #11A1F2;
+}
+.upcoming-events-item-inner .upcoming-events-content .upcoming-events-text .event-type-tag span{
+	color: #BBBCBC;
+	margin-left: 5px;
+}
+.upcoming-events-item-inner .upcoming-events-content .upcoming-events-text h2.event-heading {
+    font-size: 25px;
+    text-transform: initial;
+    line-height: 35px;
+    margin: 0 0 10px;
+}
+.upcoming-events-item-inner .upcoming-events-content .upcoming-events-text .events-content {
+    line-height: 26px;
+}
+.upcoming-events-item-inner .upcoming-events-content .date-time-outer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.upcoming-events-item-inner .upcoming-events-content .date-time-outer .date-time {
+    width: calc(100% - 180px);
+    font-size: 16px;
+    font-weight: 700;
+    color: #07055B;
+    line-height: 26px;
+    padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.upcoming-events-item-inner .upcoming-events-content .date-time-outer .event-register-btn {
+    width: 180px;
+}
+.upcoming-events-item-inner .upcoming-events-content .date-time-outer .event-register-btn a.register-link {
+    padding: 7px 24px 9px 25px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 900;
+    height: 45px;
+    line-height: 26px;
+    transition: all 0.35s ease-in-out;
+    border: solid 2px #11A1F2;
+    background: #11A1F2;
+    width: 100%;
+    color: #fff;
+    display: block;
+}
+.upcoming-events-item-inner .upcoming-events-content .date-time-outer .event-register-btn a.register-link:hover{
+	background: transparent;
+	color: #11A1F2;
+}
+.slider-upcoming-events .upcoming-events-outer .swiper-button-next:after, 
+.slider-upcoming-events .upcoming-events-outer .swiper-button-prev:after {
+    font-family: inherit !important;
+    font-size: 0px !important;
+    content: "";
+    width: 28px;
+    height: 33px;
+    background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml,%3Csvg id='Slider_Arrow_L' data-name='Slider Arrow L' xmlns='http://www.w3.org/2000/svg' width='28.265' height='33.512' viewBox='0 0 28.265 33.512'%3E%3Cpath id='Path_55267' data-name='Path 55267' d='M47.79 44.018 64.548 27.262H49.614L38.706 38.168a8.272 8.272 0 0 0 0 11.7L49.614 60.774H64.548Z' transform='translate(-36.283 -27.262)' fill='%2311a1f2'/%3E%3C/svg%3E");
+}
+
+.slider-upcoming-events .upcoming-events-outer .swiper-button-prev, .slider-upcoming-events .upcoming-events-outer .swiper-rtl .swiper-button-next {
+    left: 0px;
+    right: auto;
+}
+.slider-upcoming-events .upcoming-events-outer .swiper-button-next, .slider-upcoming-events .upcoming-events-outer .swiper-rtl .swiper-button-prev {
+    right: 0px;
+    left: auto;
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1199px) {
+    .upcoming-events-item-inner .upcoming-event-image {
+        max-width: 330px;
+    }
+    .upcoming-events-item-inner .upcoming-events-content {
+        max-width: calc(100% - 330px);
+    }
+}
+@media screen and (max-width: 991px) {
+    .upcoming-events-item-inner {
+        flex-wrap: wrap;
+    }
+    .upcoming-events-item-inner .upcoming-event-image {
+        max-width: 100%;
+        width: 100%;
+        height: 200px;
+    }
+    .upcoming-events-item-inner .upcoming-event-image img {
+        height: 100%;
+    }
+    .upcoming-events-item-inner .upcoming-events-content {
+        padding: 30px;
+        max-width: 100%;
+        width: 100%;
+        height: calc(100% - 200px);
+    }
+    .upcoming-events-item-inner .upcoming-events-content .date-time-outer {
+        margin: 30px 0 0;
+    }
+    .upcoming-events-item-inner .upcoming-events-content .upcoming-events-text h2.event-heading {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .upcoming-events-item-inner .upcoming-events-content .date-time-outer{
+        flex-wrap: wrap;
+    }
+    .upcoming-events-item-inner .upcoming-events-content .date-time-outer .date-time {
+        width: 100%;
+        padding: 0 0 20px !important;
+    }
+}
